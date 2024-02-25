@@ -26,18 +26,17 @@ cive/
 │   ├── css/
 │   │   └── style-main.css
 │   │   
-|   |
 │   ├── js/
 │   │   └──  //... your custom JS
-│   │
+|   |
+│   ├── .cive/
+│   │   └──  App.js
+|   |
 │   ├── routes.js
-│   ├── App.js
 │   └── index.js
 │
-├── package.json
-├── .gitignore
 ├── README.md
-└── webpack.config.js
+
 
 ```
 
