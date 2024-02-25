@@ -21,10 +21,12 @@ cive/
 │   │   └── images/
 │   │
 │   ├── components/
-│   │   └── home.html
+│   │   ├──  home.html
+│   │   └── // .. others components
 │   │
 │   ├── css/
 │   │   └── style-main.css
+│   │   └── // .. others styles
 │   │   
 │   ├── js/
 │   │   └──  //... your custom JS
