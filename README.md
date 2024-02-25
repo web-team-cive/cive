@@ -11,6 +11,35 @@ This repulsitory contains the source code for the cive-framework, a new JS front
 
 ## File Structure:
 ```bash
+cive/
+│
+├── index.html
+├── favicon.ico
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── components/
+│   │   └── Home.js
+│   │   └── About.js
+│   │   └── Contact.js
+│   │
+│   ├── css/
+│   │   └── custom.css
+│   │
+│   ├── js/
+│   │   └── custom.js
+│   │
+│   ├── routes.js
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── .gitignore
+├── README.md
+└── webpack.config.js
+
 ```
 
 ## Contributions?
