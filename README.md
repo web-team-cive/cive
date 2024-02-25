@@ -1,15 +1,5 @@
-# portfolios for each members 🚀
-This repulsitory contains the member portfolios readmes.
+# portfolios website🌐 for all members 🚀
+This repulsitory contains the source code for portfolio website for our team organization. 
 
-## Contact a member through portfolios
-The portfolios contains the informations about an individual.
-
-### Hierachy
-```bash
-...
-|
-|- membername/
-|  |- README.md
-|
-...
-```
+## Contacts ☎️
+The portfolio contains the informations about an our organization.
