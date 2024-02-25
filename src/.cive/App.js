@@ -1,4 +1,4 @@
-import { routes } from './routes.js';
+import { routes } from '../routes.js';
 
 // Function to navigate to a specific route
 function navigateTo(route) {
