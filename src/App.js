@@ -1,9 +1,4 @@
-// Define the routes and their corresponding HTML files
-const routes = {
-  '/home': '/src/components/home.html',
-  '/about': '/src/components/about.html',
-  '/contact': '/src/components/contact.html'
-};
+import { routes } from './routes.js';
 
 // Function to navigate to a specific route
 function navigateTo(route) {
@@ -12,10 +7,12 @@ function navigateTo(route) {
     // Fetch and render the HTML content of the corresponding file
     fetchHtml(routes[route]);
   } else {
-    // the custom 404 page
-    fetchHtml('/src/components/404.html');
+    // Route Not Found Route
 
-    // Route not found, display a 404 error message
+    // The custom 404 page
+    fetchHtml('/src/components/not-found/404.html');
+
+    /* Uncomment to display custom message only ( No File ) */
     //renderComponent('404: Page not found.');
   }
 }
@@ -25,13 +22,16 @@ function fetchHtml(path) {
   fetch(path)
     .then(response => {
       if (!response.ok) {
+        console.log(`(cive) File:: {path} not found!`);
         throw new Error('Failed to fetch HTML file');
+
       }
       return response.text();
     })
     .then(html => renderComponent(html))
     .catch(error => {
       console.error(error);
+      console.log(`(cive) FailMessage:: Failed to load page!`)
       renderComponent('Failed to load page.');
     });
 }
